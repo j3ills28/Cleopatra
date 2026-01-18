@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkte | Aurelia Schmuck</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-header">
+                <a href="index.html" class="logo">
+                    <span class="logo-main">CLEOPATRA</span>
+                    <span class="logo-sub">SILVER</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="nav-overlay" id="navOverlay"></div>
+            
+            <div class="nav-sidebar" id="navSidebar">
+                <div class="sidebar-header">
+                    <a href="index.html" class="sidebar-logo">
+                        <img src="assets/images/logo.png" alt="Cleopatra Silver Logo" class="sidebar-logo-img">
+                    </a>
+                    <button class="sidebar-close" id="sidebarClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Start</a></li>
+                    <li><a href="products.html" class="nav-link">Produkte</a></li>
+                    <li><a href="about.html" class="nav-link">Über uns</a></li>
+                    <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                </ul>
+                
+                <div class="sidebar-footer">
+                    <div class="sidebar-contact">
+                        <p><a href="mailto:info@cleopatra-silver.de">info@cleopatra-silver.de</a></p>
+                    </div>
+                    <div class="sidebar-legal">
+                        <a href="impressum.html">Impressum</a>
+                        <a href="datenschutz.html">Datenschutz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Unsere Schmuckkollektion</h1>
+            <p>Entdecken Sie einzigartige Handwerkskunst</p>
+        </div>
+    </section>
+
+    <!-- Product Filter -->
+    <section class="product-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="necklaces">Halsketten</button>
+                <button class="filter-btn" data-filter="earrings">Ohrringe</button>
+                <button class="filter-btn" data-filter="bracelets">Armbänder</button>
+                <button class="filter-btn" data-filter="rings">Ringe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" alt="Silberkette mit Amethyst">
+                    </div>
+                    <div class="product-info">
+                        <h3>Silberkette mit Amethyst</h3>
+                        <p class="product-description">925er Sterlingsilber mit handgeschliffenem Amethyst. Länge: 45cm.</p>
+                        <p class="price">€ 79,90</p>
+                        <a href="contact.html?product=Silberkette mit Amethyst" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" alt="Goldene Creolen">
+                    </div>
+                    <div class="product-info">
+                        <h3>Silberne Creolen</h3>
+                        <p class="product-description">14k Gold Creolen mit feinem Muster. Durchmesser: 3cm.</p>
+                        <p class="price">€ 129,90</p>
+                        <a href="contact.html?product=Goldene Creolen" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" alt="Perlenarmband Gold">
+                    </div>
+                    <div class="product-info">
+                        <h3>Perlenarmband Silber</h3>
+                        <p class="product-description">Goldfaden mit echten Perlen und Goldclasp.</p>
+                        <p class="price">€ 95,50</p>
+                        <a href="contact.html?product=Perlenarmband Gold" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" alt="Smaragd Ring Silber">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smaragd Ring Silber</h3>
+                        <p class="product-description">925er Silber mit kleinem Smaragd. Größe anpassbar.</p>
+                        <p class="price">€ 145,00</p>
+                        <a href="contact.html?product=Smaragd Ring Silber" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" alt="Minikette mit Diamant">
+                    </div>
+                    <div class="product-info">
+                        <h3>Minikette mit Diamant</h3>
+                        <p class="product-description">Zarte Goldkette mit kleinem Diamanten. Länge: 40cm.</p>
+                        <p class="price">€ 199,90</p>
+                        <a href="contact.html?product=Minikette mit Diamant" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" alt="Silberne Tropfenohrringe">
+                    </div>
+                    <div class="product-info">
+                        <h3>Silberne Tropfenohrringe</h3>
+                        <p class="product-description">Sterlingsilber mit Mondstein. Länge: 4cm.</p>
+                        <p class="price">€ 68,50</p>
+                        <a href="contact.html?product=Silberne Tropfenohrringe" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" alt="Lederarmband mit Silber">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lederarmband mit Silber</h3>
+                        <p class="product-description">Braunes Leder mit Silberverschluss. Verstellbar.</p>
+                        <p class="price">€ 42,90</p>
+                        <a href="contact.html?product=Lederarmband mit Silber" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" alt="Schmetterling Ring">
+                    </div>
+                    <div class="product-info">
+                        <h3>Schmetterling Ring</h3>
+                        <p class="product-description">Zarter Silberring mit Schmetterlingsmotiv. Größe 54.</p>
+                        <p class="price">€ 55,00</p>
+                        <a href="contact.html?product=Schmetterling Ring" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Sie suchen etwas Besonderes?</h2>
+            <p>Kontaktieren Sie uns für individuelle Anfragen</p>
+            <a href="contact.html" class="btn btn-primary">Anfrage senden</a>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cleopatra Silver</h3>
+                    <p>Elegante Schmuckstücke mit Liebe zum Detail.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li><a href="contact.html">Kontaktformular</a></li>
+                        <li><a href="mailto:info@cleopatra-schmuck.de">info@cleopatra-schmuck.de</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Cleopatra Schmuck. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+   <!-- Hilfsfunktionen zuerst -->
+<script src="js/utils.js"></script>
+
+<!-- Navigation als nächstes -->
+<script src="js/navigation.js"></script>
+
+<!-- Spezifische Skripte -->
+<script src="js/gallery.js"></script>
+<script src="js/form-handler.js"></script>
+
+<!-- Hauptskript zum Schluss -->
+<script src="js/main.js"></script>
+</body>
+</html>
